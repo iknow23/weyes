@@ -1,0 +1,40 @@
+{
+  "name": "weyes",
+  "version": "1.0.0",
+  "description": "This tesk task for Welles company",
+  "devDependencies": {
+    "autoprefixer": "8.3.x",
+    "browser-sync": "2.23.x",
+    "del": "^3.0.0",
+    "gulp": "3.9.x",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "3.1.x",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "7.0.x",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webp": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "posthtml-include": "^1.1.0",
+    "run-sequence": "^2.2.1",
+    "gulp-pug": "^3.0.3"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "npm run build && gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iknow23/weyes.git"
+  },
+  "author": "Aynur Vafin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iknow23/weyes/issues"
+  },
+  "homepage": "https://github.com/iknow23/weyes#readme"
+}

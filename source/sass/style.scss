@@ -1,0 +1,10 @@
+@import "variables.scss";
+@import "fonts.scss";
+@import "global.scss";
+@import "mixins.scss";
+
+/* Плагины */
+@import "plugins/normalize.scss";
+
+/* Блоки */
+@import "blocks/example.scss";
