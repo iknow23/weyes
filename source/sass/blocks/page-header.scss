@@ -1,0 +1,77 @@
+.page-header__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 90px;
+}
+
+.page-header__tel {
+    position: relative;
+    margin-left: auto;
+    font-size: 24px;
+    line-height: 24px;
+    color: $color-font-gray;
+    @include bold;
+}
+
+.page-header__tel::after {
+    content: '';
+
+    position: absolute;
+    right: -35px;
+    top: -5px;
+    width: 30px;
+    height: 30px;
+    background-image: url('../img/icon-tel.svg');
+    background-repeat: no-repeat;
+}
+
+.page-header__bottom {
+    background-image: url(../img/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color: #B7B2AF;
+
+    @media (max-width: $desktop-width) {
+        background-size: cover;
+    }
+}
+
+.page-header__bottom-wrapper {
+    min-height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.page-header__city {
+    font-size: 35px;
+    line-height: 25px;
+    @include normal;
+    color: $color-font-gray;
+    background-color: white;
+}
+
+.page-header__room {
+    font-size: 45px;
+    line-height: 45px;
+    @include bold;
+    color: #000000;
+    background-color: white;
+}
+
+.page-header__city,
+.page-header__room {
+    margin: -1px;
+    padding: 10px 15px;
+}
+
+// @media (max-width: $desktop-width) {
+//     
+// }
+
+// @media (max-width: $tablet-width) {
+//     
+// }

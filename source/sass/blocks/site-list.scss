@@ -1,0 +1,29 @@
+.site-list {
+    @include indents-zero;
+    margin-left: 10px;
+}
+
+.site-list__item {
+    margin-left: 50px;
+}
+
+.site-list__link {
+    font-size: 16px;
+    line-height: 14px;
+    color: $color-font-yellow;
+    @include normal;
+}
+
+// @media (max-width: $desktop-width) {
+//     .container {
+//         width: 700px;
+//         margin: 0 auto;
+//     }
+// }
+
+// @media (max-width: $tablet-width) {
+//     .container {
+//         width: 300px;
+//         margin: 0 auto;
+//     }
+// }

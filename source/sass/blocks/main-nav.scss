@@ -1,0 +1,21 @@
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav__toggle {
+    display: none;
+}
+
+.main-nav__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+// @media (max-width: $desktop-width) {
+//     
+// }
+
+// @media (max-width: $tablet-width) {
+//     
+// }

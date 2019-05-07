@@ -1,47 +1,15 @@
-// @font-face {
-//   font-family: "Circe";
-//   font-style: normal;
-//   font-display: swap;
-//   font-weight: 400;
-//   src: local("Circe"), url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff");
-// }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Roboto"), url("../fonts/roboto-regular.woff2") format("woff2"), url("../fonts/roboto-regular.woff") format("woff");
+}
 
-// @font-face {
-//   font-family: "Circe";
-//   font-style: normal;
-//   font-display: swap;
-//   font-weight: 700;
-//   src: local("Circe-Bold"), url("../fonts/Circe-Bold.woff2") format("woff2"), url("../fonts/Circe-Bold.woff") format("woff");
-// }
-
-// @font-face {
-//   font-family: "Circe";
-//   font-style: normal;
-//   font-display: swap;
-//   font-weight: 800;
-//   src: local("Circe-ExtraBold"), url("../fonts/Circe-ExtraBold.woff2") format("woff2"), url("../fonts/Circe-ExtraBold.woff") format("woff");
-// }
-
-// @font-face {
-//   font-family: "Circe";
-//   font-style: normal;
-//   font-display: swap;
-//   font-weight: 200;
-//   src: local("Circe-ExtraLight"), url("../fonts/Circe-ExtraLight.woff2") format("woff2"), url("../fonts/Circe-ExtraLight.woff") format("woff");
-// }
-
-// @font-face {
-//   font-family: "Circe";
-//   font-style: normal;
-//   font-display: swap;
-//   font-weight: 300;
-//   src: local("Circe-Light"), url("../fonts/Circe-Light.woff2") format("woff2"), url("../fonts/Circe-Light.woff") format("woff");
-// }
-
-// @font-face {
-//   font-family: "Circe";
-//   font-style: normal;
-//   font-display: swap;
-//   font-weight: 100;
-//   src: local("Circe-Thin"), url("../fonts/Circe-Thin.woff2") format("woff2"), url("../fonts/Circe-Thin.woff") format("woff");
-// }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local("Roboto-Bold"), url("../fonts/roboto-bold.woff2") format("woff2"), url("../fonts/roboto-bold.woff") format("woff");
+}

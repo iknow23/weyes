@@ -1,23 +1,23 @@
 "use strict";
 
-var gulp = require("gulp");
-var sass = require("gulp-sass");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var minify = require("gulp-csso")
-var rename = require("gulp-rename")
-var server = require("browser-sync").create();
-var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore");
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
-var run = require("run-sequence")
-var del = require("del");
-var jsminify = require("gulp-uglify");
-var sourcemaps = require("gulp-sourcemaps");
-var pug = require('gulp-pug');
+let gulp = require("gulp"),
+    sass = require("gulp-sass"),
+    plumber = require("gulp-plumber"),
+    postcss = require("gulp-postcss"),
+    autoprefixer = require("autoprefixer"),
+    minify = require("gulp-csso"),
+    rename = require("gulp-rename"),
+    server = require("browser-sync").create(),
+    imagemin = require("gulp-imagemin"),
+    webp = require("gulp-webp"),
+    svgstore = require("gulp-svgstore"),
+    posthtml = require("gulp-posthtml"),
+    include = require("posthtml-include"),
+    run = require("run-sequence"),
+    del = require("del"),
+    jsminify = require("gulp-uglify"),
+    sourcemaps = require("gulp-sourcemaps"),
+    pug = require('gulp-pug');
 
 gulp.task('pug', function () {
   return gulp.src('source/*.pug')
@@ -70,7 +70,8 @@ gulp.task("serve", function() {
   gulp.watch("source/img/**/*.{gif,png,jpg,svg,webp}", ["copy"]);
   gulp.watch("source/img/sprite/icon-*.svg", ["sprite"]);
   gulp.watch("source/sass/**/*.scss", ["style"]);
-  gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+  // gulp.watch("source/*.html", ["html"]).on("change", server.reload);
+  gulp.watch("source/**/*.pug", ["pug"]).on("change", server.reload);
   gulp.watch("source/js/**/*.js", ["js"]);
 });
 
