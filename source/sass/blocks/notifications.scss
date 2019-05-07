@@ -54,8 +54,32 @@
     overflow: hidden;
 }
 
-// @media (max-width: $desktop-width) {
-// }
+@media (max-width: $desktop-width) {
+    .notifications {
+        width: 100%;
+    }
 
-// @media (max-width: $tablet-width) {
-// }
+    .notifications__title {
+        margin-bottom: 20px;
+    }
+
+    .notifications__item {
+        padding: 18px 35px 15px 15px;
+    }
+
+    .notifications__item-title {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .notifications__btn {
+        right: 15px;
+        top: 15px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .notifications__item {
+        margin-bottom: 15px;
+    }
+}

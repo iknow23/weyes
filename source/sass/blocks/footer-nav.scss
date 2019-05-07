@@ -14,10 +14,32 @@
     color: $color-font-yellow;
 }
 
-// @media (max-width: $desktop-width) {
-//     
-// }
+@media (max-width: $desktop-width) {
+    .footer-nav__list {
+        width: 50%;
+        margin-bottom: 40px;
+    }
 
-// @media (max-width: $tablet-width) {
-//     
-// }
+    .footer-nav__link {
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .footer-nav {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .footer-nav__list {
+        width: 100%;
+        margin-bottom: 0;
+        padding: 16px 15px 15px 13px;
+        border-top: $border;
+    }
+
+    .footer-nav__item {
+        display: none;
+    }
+}

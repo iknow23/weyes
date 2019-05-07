@@ -5,8 +5,13 @@
     border-right: $border;
 }
 
-// @media (max-width: $desktop-width) {
-// }
+@media (max-width: $desktop-width) {
+    .info {
+        width: 100%;
+        padding-right: 0;
+        border-right: none;
+    }
+}
 
 // @media (max-width: $tablet-width) {
 // }

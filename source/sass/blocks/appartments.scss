@@ -1,4 +1,4 @@
-.appartments-list {
+.appartments__list {
     @include indents-zero;
 }
 
@@ -39,10 +39,46 @@
     color: $color-font-yellow;
 }
 
-// @media (max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
+    .appartments__list {
+        display: flex;
+        justify-content: space-between;
+    }
 
-// }
+    .appartments__item {
+        width: 48%;
+        padding: 15px;
+        border: none;
 
-// @media (max-width: $tablet-width) {
- 
-// }
+        &:first-of-type {
+            border-right: $border;
+        }
+
+        &:last-of-type {
+            border: none;
+        }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .appartments__list {
+        flex-direction: column;
+    }
+
+    .appartments__item {
+        width: 100%;
+
+        &:first-of-type {
+            border-right: none;
+        }
+    }
+
+    .appartments__title {
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    .appartments__desc {
+        font-size: 13px;
+    }
+}

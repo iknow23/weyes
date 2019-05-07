@@ -3,10 +3,15 @@
 }
 
 .page-header__top {
+    position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     min-height: 90px;
+}
+
+.page-header__nav {
+    flex-grow: 1;
 }
 
 .page-header__tel {
@@ -69,10 +74,24 @@
     padding: 10px 15px;
 }
 
-// @media (max-width: $desktop-width) {
-//     
-// }
+@media (max-width: $desktop-width) {
+    .page-header__tel {
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 0;
+
+        &::after {
+            right: -35px;
+        }
+    }
+
+    .page-header__city,
+    .page-header__room {
+        font-size: 25px;
+        line-height: 25px;
+    }
+}
 
 // @media (max-width: $tablet-width) {
-//     
+    
 // }

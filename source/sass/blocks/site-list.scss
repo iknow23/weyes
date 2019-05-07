@@ -1,6 +1,5 @@
 .site-list {
     @include indents-zero;
-    margin-left: 10px;
 }
 
 .site-list__item--header {
@@ -18,10 +17,23 @@
     @include normal;
 }
 
-// @media (max-width: $desktop-width) {
+@media (max-width: $desktop-width) {
+    .site-list {
+        margin-left: 0;
+        margin-bottom: 70px;
+        flex-direction: column;
+        align-items: center;
+    }
 
-// }
+    .site-list__item {
+        margin-left: 0;
+
+        &:not(:last-of-type) {
+            margin-bottom: 35px;
+        }
+    }
+}
 
 // @media (max-width: $tablet-width) {
-
+    
 // }

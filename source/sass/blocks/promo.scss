@@ -71,8 +71,19 @@
     color: #000000;
 }
 
-// @media (max-width: $desktop-width) {
-// }
+@media (max-width: $desktop-width) {
+    .promo__item {
+        width: 30%;
+    }
+}
 
-// @media (max-width: $tablet-width) {
-// }
+@media (max-width: $tablet-width) {
+    .promo__item {
+        width: 100%;
+    }
+
+    .promo__desc {
+        font-size: 22px;
+        line-height: 28px;
+    }
+}

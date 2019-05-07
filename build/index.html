@@ -11,14 +11,16 @@
   <body>
     <header class="page-header">
       <div class="page-header__top container"><a class="page-header__logo"><img class="header__logo-image" src="img/logo.svg" width="177" height="32" alt="Логотип компании wellyes"></a>
-        <nav class="page-header__nav main-nav">
-          <button class="main-nav__toggle" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--header"><a class="site-list__link" href="" target="_blank" rel="noopener noreferrer">Главная</a></li>
-            <li class="site-list__item site-list__item--header"><a class="site-list__link" href="#" target="_blank" rel="noopener noreferrer">О нас</a></li>
-            <li class="site-list__item site-list__item--header"><a class="site-list__link" href="#" target="_blank" rel="noopener noreferrer">Каталог</a></li>
-          </ul>
-        </nav><span class="page-header__tel contact-tel">+7 999 999-99-99</span>
+        <nav class="page-header__nav main-nav main-nav--closed main-nav--nojs">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--header"><a class="site-list__link" href="" target="_blank" rel="noopener noreferrer">Главная</a></li>
+              <li class="site-list__item site-list__item--header"><a class="site-list__link" href="#" target="_blank" rel="noopener noreferrer">О нас</a></li>
+              <li class="site-list__item site-list__item--header"><a class="site-list__link" href="#" target="_blank" rel="noopener noreferrer">Каталог</a></li>
+            </ul><span class="page-header__tel contact-tel">+7 999 999-99-99</span>
+          </div>
+        </nav>
       </div>
       <div class="page-header__bottom">
         <div class="page-header__bottom-wrapper container"><span class="page-header__city">Сочи</span><span class="page-header__room">Аппартаменты 1</span></div>
@@ -41,7 +43,7 @@
           </div>
           <div class="info__appartments appartments">
             <h3 class="visually-hidden">Каталог аппартаментов</h3>
-            <ul class="appartments-list">
+            <ul class="appartments__list">
               <li class="appartments__item">
                 <p class="appartments__title">Аппартаменты 1</p>
                 <p class="appartments__description"><span class="appartments__desc">г. Сочи, ул. Виноградная 20</span><a class="appartments__link" href="#" target="_blank" rel="noopener noreferrer">Перейти<span>

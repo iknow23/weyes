@@ -5,8 +5,14 @@
     margin-bottom: 45px;
 }
 
-// @media (max-width: $desktop-width) {
-// }
+@media (max-width: $desktop-width) {
+    .info-n-notifications__wrapper {
+        flex-direction: column;
+    }
+}
 
-// @media (max-width: $tablet-width) {
-// }
+@media (max-width: $tablet-width) {
+    .info-n-notifications__wrapper {
+        margin-bottom: 15px;
+    }
+}

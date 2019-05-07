@@ -18,10 +18,28 @@
     margin-bottom: 25px;
 }
 
-// @media (max-width: $desktop-width) {
-//     
-// }
+@media (max-width: $desktop-width) {
+    .page-footer {
+        padding-bottom: 0;
+    }
 
-// @media (max-width: $tablet-width) {
-//     
-// }
+    .page-footer__nav-wrapper {
+        width: 45%;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .page-footer {
+        flex-direction: column;
+    }
+
+    .page-footer__info-wrapper {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .page-footer__nav-wrapper {
+        width: 100%;
+    }
+}
