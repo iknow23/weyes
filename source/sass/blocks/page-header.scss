@@ -1,3 +1,7 @@
+.page-header {
+    margin-bottom: 30px;
+}
+
 .page-header__top {
     display: flex;
     justify-content: flex-start;
@@ -8,6 +12,7 @@
 .page-header__tel {
     position: relative;
     margin-left: auto;
+    padding-right: 90px;
     font-size: 24px;
     line-height: 24px;
     color: $color-font-gray;
@@ -18,7 +23,7 @@
     content: '';
 
     position: absolute;
-    right: -35px;
+    right: 35px;
     top: -5px;
     width: 30px;
     height: 30px;

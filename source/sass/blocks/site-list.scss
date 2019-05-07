@@ -3,8 +3,12 @@
     margin-left: 10px;
 }
 
-.site-list__item {
+.site-list__item--header {
     margin-left: 50px;
+}
+
+.site-list__item--documentation:not(:last-of-type) {
+    margin-bottom: 35px;
 }
 
 .site-list__link {
@@ -15,15 +19,9 @@
 }
 
 // @media (max-width: $desktop-width) {
-//     .container {
-//         width: 700px;
-//         margin: 0 auto;
-//     }
+
 // }
 
 // @media (max-width: $tablet-width) {
-//     .container {
-//         width: 300px;
-//         margin: 0 auto;
-//     }
+
 // }

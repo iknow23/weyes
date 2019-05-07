@@ -1,0 +1,28 @@
+.documentation {
+    margin-bottom: 35px;
+}
+
+.documentation__list {
+    @include indents-zero;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.documentation__btn {
+    width: 295px;
+    padding: 10px 20px;
+    font-size: 16px;
+    line-height: 19px;
+    @include normal;
+    color: $color-font-gray;
+    background-color: #ffffff;
+    border: $border;
+    border-radius: 20px;
+}
+
+// @media (max-width: $desktop-width) {
+// }
+
+// @media (max-width: $tablet-width) {
+// }

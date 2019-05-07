@@ -1,18 +1,19 @@
 .container {
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 0 50px;
 }
 
-// @media (max-width: $desktop-width) {
-//     .container {
-//         width: 700px;
-//         margin: 0 auto;
-//     }
-// }
+@media (max-width: $desktop-width) {
+    .container {
+        width: auto;
+        padding: 0 40px;
+    }
+}
 
-// @media (max-width: $tablet-width) {
-//     .container {
-//         width: 300px;
-//         margin: 0 auto;
-//     }
-// }
+@media (max-width: $tablet-width) {
+    .container {
+        width: auto;
+        padding: 12px;
+    }
+}

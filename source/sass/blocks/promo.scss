@@ -1,0 +1,78 @@
+.promo {
+    background-color: #EDEEEE;
+
+    &__wrapper {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+}
+
+.promo__item {
+    width: 18%;
+}
+
+.promo__date {
+    margin-right: 20px;
+    font-size: 15px;
+    line-height: 15px;
+    @include normal;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.promo__text {
+    position: relative;
+    padding: 0 10px;
+    @include normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+
+    &.promo__sale {
+        color: #ffffff;
+        background-color: $color-font-yellow;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+        }
+
+        &::before {
+            top: 0;
+            left: 0;
+            border: 7px solid transparent;
+            border-left: 7px solid #EDEEEE;
+        }
+
+        &::after {
+            top: 0;
+            right: 0;
+            border: 7px solid transparent;
+            border-right: 7px solid #EDEEEE;
+        }
+    }
+
+    &.promo__news {
+        color: #000000;
+        background-color: #ffffff;
+    }
+}
+
+.promo__desc {
+    margin: 0;
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    @include normal;
+    color: #000000;
+}
+
+// @media (max-width: $desktop-width) {
+// }
+
+// @media (max-width: $tablet-width) {
+// }
