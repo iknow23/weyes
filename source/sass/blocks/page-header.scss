@@ -13,10 +13,6 @@
     position: relative;
     margin-left: auto;
     padding-right: 90px;
-    font-size: 24px;
-    line-height: 24px;
-    color: $color-font-gray;
-    @include bold;
 }
 
 .page-header__tel::after {

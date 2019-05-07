@@ -1,0 +1,23 @@
+.footer-nav__list {
+    font-size: 14px;
+    line-height: 14px;
+    @include indents-zero;
+    @include bold;
+    color: #000000;
+}
+
+.footer-nav__link {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    @include normal;
+    color: $color-font-yellow;
+}
+
+// @media (max-width: $desktop-width) {
+//     
+// }
+
+// @media (max-width: $tablet-width) {
+//     
+// }

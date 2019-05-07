@@ -391,12 +391,7 @@ template {
 .page-header__tel {
   position: relative;
   margin-left: auto;
-  padding-right: 90px;
-  font-size: 24px;
-  line-height: 24px;
-  color: #53565A;
-  font-weight: bold;
-  font-style: normal; }
+  padding-right: 90px; }
 
 .page-header__tel::after {
   content: '';
@@ -531,7 +526,7 @@ template {
 .notifications__btn {
   position: absolute;
   right: 35px;
-  top: 15px;
+  top: 40px;
   padding: 0;
   background: transparent;
   border: none; }
@@ -655,6 +650,93 @@ template {
 .appartments__link {
   font-size: 14px;
   line-height: 16px;
+  font-weight: normal;
+  font-style: normal;
+  color: #FFC000; }
+
+.contact-tel {
+  font-size: 24px;
+  line-height: 24px;
+  color: #53565A;
+  font-weight: bold;
+  font-style: normal; }
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 45px; }
+
+.page-footer__info-wrapper {
+  width: 30%; }
+
+.page-footer__nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 65%; }
+
+.page-footer__social {
+  margin-bottom: 25px; }
+
+.social__list {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.social__link {
+  display: block;
+  margin-right: 50px;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center; }
+  .social__link--fb {
+    background-image: url("../img/icon-fb.svg"); }
+  .social__link--tw {
+    background-image: url("../img/icon-tw.svg"); }
+  .social__link--tg {
+    background-image: url("../img/icon-tg.svg"); }
+  .social__link--inst {
+    background-image: url("../img/icon-inst.svg"); }
+  .social__link--pin {
+    background-image: url("../img/icon-pin.svg"); }
+
+.contacts__tel {
+  display: block;
+  margin-bottom: 15px; }
+
+.contacts__text {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000; }
+
+.contacts__mail {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 16px;
+  color: #FFC000; }
+
+.footer-nav__list {
+  font-size: 14px;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000; }
+
+.footer-nav__link {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
   font-weight: normal;
   font-style: normal;
   color: #FFC000; }

@@ -1,0 +1,27 @@
+.page-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 45px;
+}
+
+.page-footer__info-wrapper {
+    width: 30%;
+}
+.page-footer__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.page-footer__social {
+    margin-bottom: 25px;
+}
+
+// @media (max-width: $desktop-width) {
+//     
+// }
+
+// @media (max-width: $tablet-width) {
+//     
+// }
