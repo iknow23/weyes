@@ -4,29 +4,28 @@ footer.page-footer.container
       ul.social__list
         for i in [ {className: 'social__link--fb', link: '#', name: 'фейсбуке'}, {className: 'social__link--tw', link: '#', name: 'твиттере'}, {className: 'social__link--tg', link: '#', name: 'телеграме'}, {className: 'social__link--inst', link: '#', name: 'инстаграме'}, {className: 'social__link--pin', link: '#', name: 'пинтерест'} ]
           li.social__item
-            a.social__link(class=i.className, href=i.link)
-              span.visually-hidden='Мы в ' + i.name
+            a.social__link(class=i.className, href=i.link, aria-label='Мы в ' + i.name)
 
     .page-footer__contacts.contacts
       a.contacts__tel.contact-tel(href="tel:+79999999999") +7 999 999-99-99
       p.contacts__text г. Сочи, ул. Виноградная 20, оф. 402
-      a.contacts__mail(href="mailto:yes@wellyes.ru") yes@wellyes.ru
+      a.contacts__mail(href="mailto:yes@wellyes.ru", aria-label='Ссылка на почту yes@wellyes.ru') yes@wellyes.ru
 
-  .page-footer__nav-wrapper.footer-nav
+  .page-footer__nav-wrapper.footer-nav.accordion
     ul.footer-nav__list.accordion__btn.accordion__btn--closed.accordion__btn--footer
-      span.footer-nav__item-title Раздел 1
+      li.footer-nav__item-title Раздел 1
       for i in ['Подраздел 1', 'Подраздел 2', 'Подраздел 3', 'Подраздел 4', 'Подраздел 5']
         li.footer-nav__item.accordion__panel.accordion__panel--footer
           a.footer-nav__link(href="#")=i
     
     ul.footer-nav__list.accordion__btn.accordion__btn--closed.accordion__btn--footer
-      span.footer-nav__item-title Раздел 2
+      li.footer-nav__item-title Раздел 2
       for i in ['Подраздел 1', 'Подраздел 2', 'Подраздел 3', 'Подраздел 4', 'Подраздел 5']
         li.footer-nav__item.accordion__panel.accordion__panel--footer
           a.footer-nav__link(href="#")=i
 
     ul.footer-nav__list.accordion__btn.accordion__btn--closed.accordion__btn--footer
-      span.footer-nav__item-title Раздел 3
+      li.footer-nav__item-title Раздел 3
       for i in ['Подраздел 1', 'Подраздел 2', 'Подраздел 3', 'Подраздел 4', 'Подраздел 5']
         li.footer-nav__item.accordion__panel.accordion__panel--footer
           a.footer-nav__link(href="#")=i

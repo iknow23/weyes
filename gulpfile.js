@@ -1,6 +1,6 @@
 "use strict";
 
-let gulp = require("gulp"),
+var gulp = require("gulp"),
     sass = require("gulp-sass"),
     plumber = require("gulp-plumber"),
     postcss = require("gulp-postcss"),
@@ -11,8 +11,6 @@ let gulp = require("gulp"),
     imagemin = require("gulp-imagemin"),
     webp = require("gulp-webp"),
     svgstore = require("gulp-svgstore"),
-    posthtml = require("gulp-posthtml"),
-    include = require("posthtml-include"),
     run = require("run-sequence"),
     del = require("del"),
     jsminify = require("gulp-uglify"),
@@ -70,7 +68,6 @@ gulp.task("serve", function() {
   gulp.watch("source/img/**/*.{gif,png,jpg,svg,webp}", ["copy"]);
   gulp.watch("source/img/sprite/icon-*.svg", ["sprite"]);
   gulp.watch("source/sass/**/*.scss", ["style"]);
-  // gulp.watch("source/*.html", ["html"]).on("change", server.reload);
   gulp.watch("source/**/*.pug", ["pug"]).on("change", server.reload);
   gulp.watch("source/js/**/*.js", ["js"]);
 });
@@ -100,18 +97,9 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("html", function () {
-  return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
-    .pipe(gulp.dest("build"))
-    .pipe(server.stream());
-});
-
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{ttf,woff,woff2}",
+    "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**"
   ], {
@@ -130,7 +118,6 @@ gulp.task("build", function (done) {
     "sprite",
     "copy",
     "style",
-    "html",
     "js",
     "pug",
     done

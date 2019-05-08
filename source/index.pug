@@ -3,12 +3,12 @@ extends _layouts/home
 block content
 
 	main.page-main
-		.info-n-notifications__wrapper.container
+		.info-n-notifications-wrapper.container
 			h1.visually-hidden Описание аппартаментов в г.Сочи
 
 			section.info
 				h2.visually-hidden Документация и каталог аппартаментов
-				.info__documentation.documentation
+				.info__documentation.documentation.accordion
 					h3.visually-hidden Документация
 					.documentation__btn-wrapper.accordion__btn.accordion__btn--closed
 						button.documentation__btn Уведомления
@@ -22,19 +22,19 @@ block content
 					h3.visually-hidden Каталог аппартаментов
 					ul.appartments__list
 						li.appartments__item
-							p.appartments__title Апартаменты 1
+							p.appartments__title(title='Апартаменты 1') Апартаменты 1
 							p.appartments__description
 								span.appartments__desc г. Сочи, ул. Виноградная 20
-								a.appartments__link(href="#" target="_blank", rel="noopener noreferrer") Перейти
+								a.appartments__link(href="#" target="_blank", aria-label='Перейти', rel="noopener noreferrer") Перейти
 									span
 										svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
 											path(d="M10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0V0ZM10 19.3333C8.77433 19.3333 7.56066 19.0919 6.42829 18.6229C5.29592 18.1538 4.26702 17.4663 3.40034 16.5997C2.53366 15.733 1.84617 14.7041 1.37712 13.5717C0.90808 12.4393 0.666667 11.2257 0.666667 10C0.666667 8.77433 0.90808 7.56066 1.37712 6.42829C1.84617 5.29592 2.53366 4.26702 3.40034 3.40034C4.26702 2.53366 5.29592 1.84617 6.42829 1.37712C7.56066 0.90808 8.77433 0.666667 10 0.666667C12.4754 0.666667 14.8493 1.65 16.5997 3.40034C18.35 5.15068 19.3333 7.52465 19.3333 10C19.3333 12.4754 18.35 14.8493 16.5997 16.5997C14.8493 18.35 12.4754 19.3333 10 19.3333Z" fill="#FFC000")
 											path(d="M8.69634 5.37619L8.69649 5.37604L8.693 5.37313C8.55895 5.26142 8.37281 5.25724 8.25387 5.37619C8.14159 5.48846 8.11156 5.69833 8.25535 5.82016L12.4254 10.0097L8.2554 14.1797C8.11761 14.2963 8.11644 14.5041 8.25188 14.6222C8.30582 14.6967 8.40206 14.7166 8.46532 14.7166C8.53349 14.7166 8.62589 14.6942 8.69634 14.6237L13.0989 10.2212C13.2162 10.1038 13.2162 9.89608 13.0989 9.77872L8.69634 5.37619Z" fill="#FFC000" stroke="#FFC000" stroke-width="0.1")
 						li.appartments__item
-							p.appartments__title Апартаменты 1
+							p.appartments__title(title='Апартаменты 1') Апартаменты 1
 							p.appartments__description
 								span.appartments__desc г. Сочи, ул. Виноградная 20
-								a.appartments__link(href="#" target="_blank", rel="noopener noreferrer") Перейти
+								a.appartments__link(href="#" target="_blank", aria-label='Перейти', rel="noopener noreferrer") Перейти
 									span
 										svg(width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg")
 											path(d="M10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0V0ZM10 19.3333C8.77433 19.3333 7.56066 19.0919 6.42829 18.6229C5.29592 18.1538 4.26702 17.4663 3.40034 16.5997C2.53366 15.733 1.84617 14.7041 1.37712 13.5717C0.90808 12.4393 0.666667 11.2257 0.666667 10C0.666667 8.77433 0.90808 7.56066 1.37712 6.42829C1.84617 5.29592 2.53366 4.26702 3.40034 3.40034C4.26702 2.53366 5.29592 1.84617 6.42829 1.37712C7.56066 0.90808 8.77433 0.666667 10 0.666667C12.4754 0.666667 14.8493 1.65 16.5997 3.40034C18.35 5.15068 19.3333 7.52465 19.3333 10C19.3333 12.4754 18.35 14.8493 16.5997 16.5997C14.8493 18.35 12.4754 19.3333 10 19.3333Z" fill="#FFC000")
@@ -47,14 +47,6 @@ block content
 					include _partials/notification-item
 					include _partials/notification-item
 
-		//- section.promo
-		//- 	.promo__wrapper.container
-		//- 		h2.visually-hidden Акции и новости
-		//- 		include _partials/promo-sale
-		//- 		include _partials/promo-news
-		//- 		include _partials/promo-sale
-		//- 		include _partials/promo-news
-		//- 		include _partials/promo-news
 		section.promo.slider#slider
 			<ol class="slider__indicators">
 				<li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
@@ -66,27 +58,33 @@ block content
 			.promo__wrapper.container.slider__items
 				h2.visually-hidden Акции и новости
 				article.promo__item.slider__item.slider__item_1.slider__item_active
-					span.promo__date 14/04
-					span.promo__text.promo__sale Акция
+					h3.visually-hidden Новость 1
+					span.promo__date(title='Дата записи - 14 апреля') 14/04
+					span.promo__text.promo__sale(title='Акция') Акция
 					p.promo__desc Как достигнуть понимания между дизайнерами и разработчиками. Практические советы
 				article.promo__item.slider__item.slider__item_2
-					span.promo__date 14/04
+					h3.visually-hidden Новость 2
+					span.promo__date(title='Дата записи - 14 апреля') 14/04
 					span.promo__text.promo__news Новости
 					p.promo__desc Как достигнуть понимания между дизайнерами и разработчиками. Практические советы
 				article.promo__item.slider__item.slider__item_3
-					span.promo__date 14/04
-					span.promo__text.promo__sale Акция
+					h3.visually-hidden Новость 3
+					span.promo__date(title='Дата записи - 14 апреля') 14/04
+					span.promo__text.promo__sale(title='Акция') Акция
 					p.promo__desc Как достигнуть понимания между дизайнерами и разработчиками. Практические советы
 				article.promo__item.slider__item.slider__item_4
-					span.promo__date 14/04
+					h3.visually-hidden Новость 4
+					span.promo__date(title='Дата записи - 14 апреля') 14/04
 					span.promo__text.promo__news Новости
 					p.promo__desc Как достигнуть понимания между дизайнерами и разработчиками. Практические советы
 				article.promo__item.slider__item.slider__item_5
-					span.promo__date 14/04
+					h3.visually-hidden Новость 5
+					span.promo__date(title='Дата записи - 14 апреля') 14/04
 					span.promo__text.promo__news Новости
 					p.promo__desc Как достигнуть понимания между дизайнерами и разработчиками. Практические советы
 		
 		section.lazy-photo
-			img(class="lazy", data-src="img/lazy-photo.jpg", width="600px", style="margin: 0 auto; display: block")
+			h2.visually-hidden Тестовое фото
+			img(class="lazy", data-src="img/lazy-photo.jpg", width="600", alt="Тестовый показ ленивой загрузки", style="margin: 0 auto; display: block")
 			noscript
-				img(src="img/lazy-photo.jpg", alt="Тестовый показ ленивой загрузки", width="600px")
+				img(src="img/lazy-photo.jpg", alt="Тестовый показ ленивой загрузки", width="600")

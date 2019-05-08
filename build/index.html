@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
     <title>Wellyes</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
     <link rel="preload" href="fonts/roboto-regular.woff2" as="font">
     <link rel="preload" href="fonts/roboto-bold.woff2">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <header class="page-header">
@@ -27,11 +27,11 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="info-n-notifications__wrapper container">
+      <div class="info-n-notifications-wrapper container">
         <h1 class="visually-hidden">Описание аппартаментов в г.Сочи</h1>
         <section class="info">
           <h2 class="visually-hidden">Документация и каталог аппартаментов</h2>
-          <div class="info__documentation documentation">
+          <div class="info__documentation documentation accordion">
             <h3 class="visually-hidden">Документация</h3>
             <div class="documentation__btn-wrapper accordion__btn accordion__btn--closed">
               <button class="documentation__btn">Уведомления</button><span class="documentation__btn-badge">5</span>
@@ -47,16 +47,16 @@
             <h3 class="visually-hidden">Каталог аппартаментов</h3>
             <ul class="appartments__list">
               <li class="appartments__item">
-                <p class="appartments__title">Апартаменты 1</p>
-                <p class="appartments__description"><span class="appartments__desc">г. Сочи, ул. Виноградная 20</span><a class="appartments__link" href="#" target="_blank" rel="noopener noreferrer">Перейти<span>
+                <p class="appartments__title" title="Апартаменты 1">Апартаменты 1</p>
+                <p class="appartments__description"><span class="appartments__desc">г. Сочи, ул. Виноградная 20</span><a class="appartments__link" href="#" target="_blank" aria-label="Перейти" rel="noopener noreferrer">Перейти<span>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0V0ZM10 19.3333C8.77433 19.3333 7.56066 19.0919 6.42829 18.6229C5.29592 18.1538 4.26702 17.4663 3.40034 16.5997C2.53366 15.733 1.84617 14.7041 1.37712 13.5717C0.90808 12.4393 0.666667 11.2257 0.666667 10C0.666667 8.77433 0.90808 7.56066 1.37712 6.42829C1.84617 5.29592 2.53366 4.26702 3.40034 3.40034C4.26702 2.53366 5.29592 1.84617 6.42829 1.37712C7.56066 0.90808 8.77433 0.666667 10 0.666667C12.4754 0.666667 14.8493 1.65 16.5997 3.40034C18.35 5.15068 19.3333 7.52465 19.3333 10C19.3333 12.4754 18.35 14.8493 16.5997 16.5997C14.8493 18.35 12.4754 19.3333 10 19.3333Z" fill="#FFC000"></path>
                         <path d="M8.69634 5.37619L8.69649 5.37604L8.693 5.37313C8.55895 5.26142 8.37281 5.25724 8.25387 5.37619C8.14159 5.48846 8.11156 5.69833 8.25535 5.82016L12.4254 10.0097L8.2554 14.1797C8.11761 14.2963 8.11644 14.5041 8.25188 14.6222C8.30582 14.6967 8.40206 14.7166 8.46532 14.7166C8.53349 14.7166 8.62589 14.6942 8.69634 14.6237L13.0989 10.2212C13.2162 10.1038 13.2162 9.89608 13.0989 9.77872L8.69634 5.37619Z" fill="#FFC000" stroke="#FFC000" stroke-width="0.1"></path>
                       </svg></span></a></p>
               </li>
               <li class="appartments__item">
-                <p class="appartments__title">Апартаменты 1</p>
-                <p class="appartments__description"><span class="appartments__desc">г. Сочи, ул. Виноградная 20</span><a class="appartments__link" href="#" target="_blank" rel="noopener noreferrer">Перейти<span>
+                <p class="appartments__title" title="Апартаменты 1">Апартаменты 1</p>
+                <p class="appartments__description"><span class="appartments__desc">г. Сочи, ул. Виноградная 20</span><a class="appartments__link" href="#" target="_blank" aria-label="Перейти" rel="noopener noreferrer">Перейти<span>
                       <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M10 0C7.34784 0 4.8043 1.05357 2.92893 2.92893C1.05357 4.8043 0 7.34784 0 10C0 12.6522 1.05357 15.1957 2.92893 17.0711C4.8043 18.9464 7.34784 20 10 20C12.6522 20 15.1957 18.9464 17.0711 17.0711C18.9464 15.1957 20 12.6522 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0V0ZM10 19.3333C8.77433 19.3333 7.56066 19.0919 6.42829 18.6229C5.29592 18.1538 4.26702 17.4663 3.40034 16.5997C2.53366 15.733 1.84617 14.7041 1.37712 13.5717C0.90808 12.4393 0.666667 11.2257 0.666667 10C0.666667 8.77433 0.90808 7.56066 1.37712 6.42829C1.84617 5.29592 2.53366 4.26702 3.40034 3.40034C4.26702 2.53366 5.29592 1.84617 6.42829 1.37712C7.56066 0.90808 8.77433 0.666667 10 0.666667C12.4754 0.666667 14.8493 1.65 16.5997 3.40034C18.35 5.15068 19.3333 7.52465 19.3333 10C19.3333 12.4754 18.35 14.8493 16.5997 16.5997C14.8493 18.35 12.4754 19.3333 10 19.3333Z" fill="#FFC000"></path>
                         <path d="M8.69634 5.37619L8.69649 5.37604L8.693 5.37313C8.55895 5.26142 8.37281 5.25724 8.25387 5.37619C8.14159 5.48846 8.11156 5.69833 8.25535 5.82016L12.4254 10.0097L8.2554 14.1797C8.11761 14.2963 8.11644 14.5041 8.25188 14.6222C8.30582 14.6967 8.40206 14.7166 8.46532 14.7166C8.53349 14.7166 8.62589 14.6942 8.69634 14.6237L13.0989 10.2212C13.2162 10.1038 13.2162 9.89608 13.0989 9.77872L8.69634 5.37619Z" fill="#FFC000" stroke="#FFC000" stroke-width="0.1"></path>
@@ -113,58 +113,67 @@
 </ol>
         <div class="promo__wrapper container slider__items">
           <h2 class="visually-hidden">Акции и новости</h2>
-          <article class="promo__item slider__item slider__item_1 slider__item_active"><span class="promo__date">14/04</span><span class="promo__text promo__sale">Акция</span>
+          <article class="promo__item slider__item slider__item_1 slider__item_active">
+            <h3 class="visually-hidden">Новость 1</h3><span class="promo__date" title="Дата записи - 14 апреля">14/04</span><span class="promo__text promo__sale" title="Акция">Акция</span>
             <p class="promo__desc">Как достигнуть понимания между дизайнерами и разработчиками. Практические советы</p>
           </article>
-          <article class="promo__item slider__item slider__item_2"><span class="promo__date">14/04</span><span class="promo__text promo__news">Новости</span>
+          <article class="promo__item slider__item slider__item_2">
+            <h3 class="visually-hidden">Новость 2</h3><span class="promo__date" title="Дата записи - 14 апреля">14/04</span><span class="promo__text promo__news">Новости</span>
             <p class="promo__desc">Как достигнуть понимания между дизайнерами и разработчиками. Практические советы</p>
           </article>
-          <article class="promo__item slider__item slider__item_3"><span class="promo__date">14/04</span><span class="promo__text promo__sale">Акция</span>
+          <article class="promo__item slider__item slider__item_3">
+            <h3 class="visually-hidden">Новость 3</h3><span class="promo__date" title="Дата записи - 14 апреля">14/04</span><span class="promo__text promo__sale" title="Акция">Акция</span>
             <p class="promo__desc">Как достигнуть понимания между дизайнерами и разработчиками. Практические советы</p>
           </article>
-          <article class="promo__item slider__item slider__item_4"><span class="promo__date">14/04</span><span class="promo__text promo__news">Новости</span>
+          <article class="promo__item slider__item slider__item_4">
+            <h3 class="visually-hidden">Новость 4</h3><span class="promo__date" title="Дата записи - 14 апреля">14/04</span><span class="promo__text promo__news">Новости</span>
             <p class="promo__desc">Как достигнуть понимания между дизайнерами и разработчиками. Практические советы</p>
           </article>
-          <article class="promo__item slider__item slider__item_5"><span class="promo__date">14/04</span><span class="promo__text promo__news">Новости</span>
+          <article class="promo__item slider__item slider__item_5">
+            <h3 class="visually-hidden">Новость 5</h3><span class="promo__date" title="Дата записи - 14 апреля">14/04</span><span class="promo__text promo__news">Новости</span>
             <p class="promo__desc">Как достигнуть понимания между дизайнерами и разработчиками. Практические советы</p>
           </article>
         </div>
       </section>
-      <section class="lazy-photo"><img class="lazy" data-src="img/lazy-photo.jpg" width="600px" style="margin: 0 auto; display: block">
-        <noscript><img src="img/lazy-photo.jpg" alt="Тестовый показ ленивой загрузки" width="600px"></noscript>
+      <section class="lazy-photo">
+        <h2 class="visually-hidden">Тестовое фото</h2><img class="lazy" data-src="img/lazy-photo.jpg" width="600" alt="Тестовый показ ленивой загрузки" style="margin: 0 auto; display: block">
+        <noscript><img src="img/lazy-photo.jpg" alt="Тестовый показ ленивой загрузки" width="600"></noscript>
       </section>
     </main>
     <footer class="page-footer container">
       <div class="page-footer__info-wrapper">
         <div class="page-footer__social social">
           <ul class="social__list">
-            <li class="social__item"><a class="social__link social__link--fb" href="#"><span class="visually-hidden">Мы в фейсбуке</span></a></li>
-            <li class="social__item"><a class="social__link social__link--tw" href="#"><span class="visually-hidden">Мы в твиттере</span></a></li>
-            <li class="social__item"><a class="social__link social__link--tg" href="#"><span class="visually-hidden">Мы в телеграме</span></a></li>
-            <li class="social__item"><a class="social__link social__link--inst" href="#"><span class="visually-hidden">Мы в инстаграме</span></a></li>
-            <li class="social__item"><a class="social__link social__link--pin" href="#"><span class="visually-hidden">Мы в пинтерест</span></a></li>
+            <li class="social__item"><a class="social__link social__link--fb" href="#" aria-label="Мы в фейсбуке"></a></li>
+            <li class="social__item"><a class="social__link social__link--tw" href="#" aria-label="Мы в твиттере"></a></li>
+            <li class="social__item"><a class="social__link social__link--tg" href="#" aria-label="Мы в телеграме"></a></li>
+            <li class="social__item"><a class="social__link social__link--inst" href="#" aria-label="Мы в инстаграме"></a></li>
+            <li class="social__item"><a class="social__link social__link--pin" href="#" aria-label="Мы в пинтерест"></a></li>
           </ul>
         </div>
         <div class="page-footer__contacts contacts"><a class="contacts__tel contact-tel" href="tel:+79999999999">+7 999 999-99-99</a>
-          <p class="contacts__text">г. Сочи, ул. Виноградная 20, оф. 402</p><a class="contacts__mail" href="mailto:yes@wellyes.ru">yes@wellyes.ru</a>
+          <p class="contacts__text">г. Сочи, ул. Виноградная 20, оф. 402</p><a class="contacts__mail" href="mailto:yes@wellyes.ru" aria-label="Ссылка на почту yes@wellyes.ru">yes@wellyes.ru</a>
         </div>
       </div>
-      <div class="page-footer__nav-wrapper footer-nav">
-        <ul class="footer-nav__list accordion__btn accordion__btn--closed accordion__btn--footer"><span class="footer-nav__item-title">Раздел 1</span>
+      <div class="page-footer__nav-wrapper footer-nav accordion">
+        <ul class="footer-nav__list accordion__btn accordion__btn--closed accordion__btn--footer">
+          <li class="footer-nav__item-title">Раздел 1</li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 1</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 2</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 3</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 4</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 5</a></li>
         </ul>
-        <ul class="footer-nav__list accordion__btn accordion__btn--closed accordion__btn--footer"><span class="footer-nav__item-title">Раздел 2</span>
+        <ul class="footer-nav__list accordion__btn accordion__btn--closed accordion__btn--footer">
+          <li class="footer-nav__item-title">Раздел 2</li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 1</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 2</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 3</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 4</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 5</a></li>
         </ul>
-        <ul class="footer-nav__list accordion__btn accordion__btn--closed accordion__btn--footer"><span class="footer-nav__item-title">Раздел 3</span>
+        <ul class="footer-nav__list accordion__btn accordion__btn--closed accordion__btn--footer">
+          <li class="footer-nav__item-title">Раздел 3</li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 1</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 2</a></li>
           <li class="footer-nav__item accordion__panel accordion__panel--footer"><a class="footer-nav__link" href="#">Подраздел 3</a></li>

@@ -625,19 +625,19 @@ template {
   .site-list--nav {
     margin-bottom: 35px; } }
 
-.info-n-notifications__wrapper {
+.info-n-notifications-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px; }
 
 @media (max-width: 1440px) {
-  .info-n-notifications__wrapper {
+  .info-n-notifications-wrapper {
     flex-direction: column;
     margin-bottom: 38px; } }
 
 @media (max-width: 768px) {
-  .info-n-notifications__wrapper {
+  .info-n-notifications-wrapper {
     margin-bottom: 15px; } }
 
 .info {
