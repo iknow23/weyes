@@ -17,6 +17,11 @@
     font-size: 16px;
     line-height: 16px;
     color: $color-font-yellow;
+
+    &:hover,
+    &:focus {
+        color: #E3AB00;
+    }
 }
 
 // @media (max-width: $desktop-width) {

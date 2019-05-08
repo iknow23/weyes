@@ -1,9 +1,12 @@
 .promo {
+    margin: 30px auto;
     background-color: #EDEEEE;
 
     &__wrapper {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 33px;
+        padding-bottom: 25px;
+        padding-left: 70px;
+        padding-right: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -54,11 +57,21 @@
             border: 7px solid transparent;
             border-right: 7px solid #EDEEEE;
         }
+
+        &:hover,
+        &:focus {
+            background-color: #E3AB00;
+        }
     }
 
     &.promo__news {
         color: #000000;
         background-color: #ffffff;
+
+        &:hover,
+        &:focus {
+            color: #808080;
+        }
     }
 }
 
@@ -69,6 +82,11 @@
     line-height: 18px;
     @include normal;
     color: #000000;
+
+    &:hover,
+    &:focus {
+        color: #808080;
+    }
 }
 
 @media (max-width: $desktop-width) {
@@ -78,6 +96,14 @@
 }
 
 @media (max-width: $tablet-width) {
+    .promo {
+        margin-top: 0;
+    }
+
+    .promo__wrapper {
+        padding: 5px 15px 55px 15px;
+    }
+
     .promo__item {
         width: 100%;
     }

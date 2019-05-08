@@ -1,5 +1,5 @@
 .notifications {
-    width: 65%;
+    width: 66%;
 }
 
 .notifications__item {
@@ -9,11 +9,17 @@
     border: $border;
     border-radius: 8px;
     background-color: #ffffff;
+
+    &:hover,
+    &:focus {
+        color: #808080;
+    }
 }
 
 .notifications__title {
     margin: 0;
     margin-bottom: 40px;
+    padding-top: 10px;
     font-size: 36px;
     line-height: 42px;
     color: $color-font-gray;
@@ -40,18 +46,26 @@
     color: #000000;
 }
 
-.notifications__btn {
+.notifications__button {
     position: absolute;
     right: 35px;
     top: 40px;
     padding: 0;
-    background: transparent;
+    opacity: 1;
+    width: 32px;
+    height: 32px;
+    z-index: 5;
     border: none;
+    background: transparent;
 }
 
-.notifications__description {
-    max-height: 0;
-    overflow: hidden;
+.notifications__panel {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.2);
+    @include normal;
 }
 
 @media (max-width: $desktop-width) {
@@ -64,6 +78,7 @@
     }
 
     .notifications__item {
+        margin-bottom: 17px;
         padding: 18px 35px 15px 15px;
     }
 
@@ -72,7 +87,7 @@
         line-height: 16px;
     }
 
-    .notifications__btn {
+    .notifications__button {
         right: 15px;
         top: 15px;
     }
@@ -80,6 +95,11 @@
 
 @media (max-width: $tablet-width) {
     .notifications__item {
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+    }
+
+    .notifications__panel {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }

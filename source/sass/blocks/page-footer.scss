@@ -10,8 +10,8 @@
 }
 .page-footer__nav-wrapper {
     display: flex;
-    justify-content: space-between;
-    width: 65%;
+    justify-content: flex-start;
+    width: 59%;
 }
 
 .page-footer__social {
@@ -25,6 +25,11 @@
 
     .page-footer__nav-wrapper {
         width: 45%;
+    }
+}
+
+@media (max-width: 1000px) {
+   .page-footer__nav-wrapper {
         flex-wrap: wrap;
     }
 }
@@ -32,6 +37,7 @@
 @media (max-width: $tablet-width) {
     .page-footer {
         flex-direction: column;
+        padding-top: 15px;
     }
 
     .page-footer__info-wrapper {
@@ -40,6 +46,6 @@
     }
 
     .page-footer__nav-wrapper {
-        width: 100%;
+        width: auto;
     }
 }

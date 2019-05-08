@@ -1,7 +1,8 @@
 .footer-nav__list {
+    @include indents-zero;
+    margin-right: 22%;
     font-size: 14px;
     line-height: 14px;
-    @include indents-zero;
     @include bold;
     color: #000000;
 }
@@ -12,11 +13,25 @@
     margin-bottom: 15px;
     @include normal;
     color: $color-font-yellow;
+
+    &:hover,
+    &:focus {
+        color: #E3AB00;
+    }
+}
+
+.footer-nav__item-title {
+
+    &:hover,
+    &:focus {
+        color: #808080;
+    }
 }
 
 @media (max-width: $desktop-width) {
     .footer-nav__list {
-        width: 50%;
+        width: 30%;
+        margin-right: 20%;
         margin-bottom: 40px;
     }
 
@@ -33,13 +48,34 @@
     }
 
     .footer-nav__list {
+        position: relative;
         width: 100%;
         margin-bottom: 0;
+        margin-right: 0;
         padding: 16px 15px 15px 13px;
         border-top: $border;
-    }
 
-    .footer-nav__item {
-        display: none;
+        &::after,
+        &::before {
+            content: '';
+            position: absolute;
+            right: 50px;
+            top: 10px;
+            width: 2px;
+            height: 15px;
+            background-color: #000000;
+        }
+
+        &::after {
+            right: 38px;
+        }
+
+        &::after {
+            transform: rotate(55deg);
+        }
+
+        &::before {
+            transform: rotate(-55deg);
+        }
     }
 }

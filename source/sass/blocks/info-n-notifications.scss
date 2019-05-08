@@ -2,12 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 @media (max-width: $desktop-width) {
     .info-n-notifications__wrapper {
         flex-direction: column;
+        margin-bottom: 38px;
     }
 }
 

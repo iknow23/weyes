@@ -1,0 +1,80 @@
+.accordion__panel {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    -moz-transition: opacity 1.5s, max-height 1.5s;
+    -ms-transition: opacity 1.5s, max-height 1.5s;
+    transition: opacity 2s, max-height 2s, display 2s;
+}
+
+.accordion__panel.accordion__panel--footer {
+    opacity: 1;
+    max-height: none;
+    overflow: visible;
+}
+
+.accordion__btn--open + .accordion__panel,
+.accordion__btn--open .accordion__panel {
+    opacity: 1;
+    max-height: 300px;
+    overflow: visible;
+}
+
+.accordion__btn--open {
+
+    &> button {
+        border-color: $color-font-yellow;
+    }
+
+    &::after {
+        border-color: $color-font-yellow transparent transparent transparent;
+    }
+}
+
+.accordion__btn svg {
+    fill: rgba(0, 0, 0, 0.2);
+}
+
+.accordion__btn--active svg {
+    transform: rotate(180deg);
+    background: $color-font-yellow;
+    border-radius: 50%;
+    fill: #ffffff;
+}
+
+.accordion__btn--footer.accordion__btn--active::before {
+    transform: rotate(-125deg);
+}
+
+.accordion__btn--footer.accordion__btn--active::after {
+    transform: rotate(125deg);
+}
+
+.accordion__btn:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.accordion__btn.accordion__btn--footer:hover {
+    cursor: default;
+    opacity: 1;
+}
+
+@media (max-width: $tablet-width) {
+    .accordion__panel.accordion__panel--footer {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        -moz-transition: opacity 1.5s, max-height 1.5s;
+        -ms-transition: opacity 1.5s, max-height 1.5s;
+        transition: opacity 2s, max-height 2s, display 2s;
+    }
+
+    .accordion__btn--open + .accordion__panel.accordion__panel--footer,
+    .accordion__btn--open .accordion__panel.accordion__panel--footer {
+        opacity: 1;
+        max-height: 30px;
+        overflow: visible;
+    }
+}

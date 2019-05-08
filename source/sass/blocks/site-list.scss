@@ -6,8 +6,12 @@
     margin-left: 50px;
 }
 
-.site-list__item--documentation:not(:last-of-type) {
-    margin-bottom: 35px;
+.site-list__item--documentation {
+    padding-top: 10px;
+
+    &:not(:last-of-type) {
+        margin-bottom: 17px;
+    }
 }
 
 .site-list__link {
@@ -15,22 +19,45 @@
     line-height: 14px;
     color: $color-font-yellow;
     @include normal;
+
+    &:hover,
+    &:focus {
+        color: #E3AB00;
+    }
 }
 
 @media (max-width: $desktop-width) {
     .site-list {
+        width: 100%;
+        margin: 0 auto;
         margin-left: 0;
         margin-bottom: 70px;
         flex-direction: column;
         align-items: center;
     }
 
-    .site-list__item {
+    .site-list__item--header {
         margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .site-list__item--documentation {
+        margin-left: 0;
+        padding: 5px 15px;
 
         &:not(:last-of-type) {
-            margin-bottom: 35px;
+            margin-bottom: 5px;
+            border-bottom: $border;
         }
+    }
+
+    .site-list__link--documentation {
+        font-size: 14px;
+        color: $color-font-gray;
+    }
+
+    .site-list--nav {
+        margin-bottom: 35px;
     }
 }
 

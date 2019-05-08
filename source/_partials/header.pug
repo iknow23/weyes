@@ -1,20 +1,20 @@
 header.page-header
   .page-header__top.container
     a.page-header__logo
-      img.header__logo-image(src="img/logo.svg", width="177", height="32", alt="Логотип компании wellyes")
+      img.page-header__logo-image(src="img/logo.svg", width="177", height="32", alt="Логотип компании wellyes")
   
     nav.page-header__nav.main-nav.main-nav--closed.main-nav--nojs
       .main-nav__wrapper
         button.main-nav__toggle(type="button")
           span.visually-hidden Открыть меню
-        ul.main-nav__list.site-list
+        ul.main-nav__list.site-list.site-list--nav
           for i in [ {link: "", name: 'Главная'}, {link: "#", name: 'О нас'}, {link: "#", name: 'Каталог'}]
             li.site-list__item.site-list__item--header
               a.site-list__link(href=i.link, target="_blank", rel="noopener noreferrer")=i.name
 
-        span.page-header__tel.contact-tel +7 999 999-99-99
+        a.page-header__tel.contact-tel(href="tel:+79999999999") +7 999 999-99-99
 
   .page-header__bottom
     .page-header__bottom-wrapper.container
       span.page-header__city Сочи
-      span.page-header__room Аппартаменты 1
+      span.page-header__room Апартаменты 1

@@ -1,5 +1,5 @@
 .info {
-    width: 30%;
+    width: 31%;
     padding-right: 50px;
     padding-bottom: 50px;
     border-right: $border;
@@ -9,9 +9,14 @@
     .info {
         width: 100%;
         padding-right: 0;
+        padding-bottom: 37px;
         border-right: none;
     }
 }
 
-// @media (max-width: $tablet-width) {
-// }
+@media (max-width: $tablet-width) {
+    .info {
+        margin-bottom: 15px;
+        padding-bottom: 0;
+    }
+}
